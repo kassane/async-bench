@@ -1,0 +1,10 @@
+.{
+    .name = "zig-bench",
+    .version = "0.1.0",
+    .dependencies = .{
+        .httpz = .{
+            .url = "https://github.com/karlseguin/http.zig/archive/b425888a402295493f46b91f616d1c2dc9800d6d.tar.gz",
+            .hash = "12202c31a584f34cc9e42b8bcab05616b6f6e4159feac9827114973e072240d8a90f",
+        },
+    },
+}

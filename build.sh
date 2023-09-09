@@ -49,3 +49,8 @@ cargo build --release --manifest-path "$SRC_DIR/frameworks/async-std/Cargo.toml"
 
 # tokio
 cargo build --release --manifest-path "$SRC_DIR/frameworks/tokio/Cargo.toml" --target-dir "$BUILD_DIR/tokio"
+
+# zig
+make -C "$SRC_DIR/frameworks/zig" build
+mkdir -p "$BUILD_DIR/zig"
+cp "$SRC_DIR/frameworks/zig/zig-out/bin/hello" "$BUILD_DIR/zig"
